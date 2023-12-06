@@ -1,7 +1,5 @@
 package com.teachmeskills.lesson11.task1.task1_5;
 
-import java.util.Objects;
-
 public class Task1_5 {
 
     public static void doIndexOf (String documentNumber) {
@@ -12,10 +10,11 @@ public class Task1_5 {
 
         boolean count = false;
 
-        for (int i = 0; i < arrayString.length; i++) {
+        for (String string : arrayString) {
 
-            if (arrayString[i].equalsIgnoreCase(stringLowerCase)){
+            if (string.equalsIgnoreCase(stringLowerCase)) {
                 count = true;
+                break;
             }
 
         }

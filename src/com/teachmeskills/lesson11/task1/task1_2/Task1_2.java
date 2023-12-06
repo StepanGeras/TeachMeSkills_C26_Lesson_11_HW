@@ -1,6 +1,5 @@
 package com.teachmeskills.lesson11.task1.task1_2;
 
-import java.util.Arrays;
 
 public class Task1_2 {
 

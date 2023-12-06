@@ -5,24 +5,24 @@ public class MinMax {
     public static void doMinMax (String string) {
 
         String[] arrayString = string.split(" ");
-        String max = new String();
-        String min = new String();
+        String max = "";
+        String min = "";
 
         int maxSize = 0;
 
-        for (int i = 0; i < arrayString.length; i++) {
-            if (arrayString[i].length() >= maxSize) {
-                maxSize = arrayString[i].length();
-                max = arrayString[i];
+        for (String s : arrayString) {
+            if (s.length() >= maxSize) {
+                maxSize = s.length();
+                max = s;
             }
         }
 
         int minSize = maxSize;
 
-        for (int i = 0; i < arrayString.length; i++) {
-            if (arrayString[i].length() <= minSize){
-                minSize = arrayString[i].length();
-                min = arrayString[i];
+        for (String s : arrayString) {
+            if (s.length() <= minSize) {
+                minSize = s.length();
+                min = s;
             }
         }
 
